@@ -2,6 +2,9 @@
 /* Sub-Folder Imports */
 /* ============================================= */
 /* ============================================= */
+/* Utilities Imports */
+/* ============================================= */
+/* ============================================= */
 /*                Base Imports                   */
 /* ============================================= */
 /* ============================================= */
@@ -587,9 +590,12 @@ template {
 }
 
 main {
-  text-align: center;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
 }
 
 /* ============================================= */
@@ -600,7 +606,10 @@ main {
 /* ============================================= */
 .gallery {
   max-width: 75%;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -609,8 +618,12 @@ main {
 
 .search-box {
   max-width: 900px;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: repeat(5, minmax(80px, 1fr));
   justify-content: center;
 }
@@ -626,7 +639,7 @@ a img {
   height: 100%;
 }
 a:focus, a:hover {
-  border: 2px solid skyblue;
+  border: 4px solid skyblue;
   outline: 0;
 }
 
@@ -641,8 +654,7 @@ input {
 }
 
 #searchfield {
-  border: 2px solid #9e9e9e60;
-  font-size: bold;
+  border: 2px solid #c4c4c4;
   color: #9e9e9e;
 }
 #searchfield:focus, #searchfield:hover {
