@@ -10,7 +10,7 @@
 }
 
 main {
-    text-align: center;
-    margin: 0 auto;
-    font-family: 'Ubuntu', sans-serif;
+    @include margins($top: 0, $right: auto, $bottom: 0, $left: auto);
+    font-family: $font-family-stack;
+    font-weight: bold;
 }

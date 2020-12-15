@@ -1,0 +1,30 @@
+// Grid
+@mixin grid(
+    $disp: grid,
+    $gap: 20px,
+    $gtc: null,
+    $gtr: null,
+    $jc: null,
+    $ai: null,
+) {
+    display: $disp;
+    grid-gap: $gap;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+// Margins
+@mixin margins(
+    $top: null,
+    $right: null, 
+    $bottom: null,
+    $left: null
+) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+    @content
+}
