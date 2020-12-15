@@ -627,10 +627,12 @@ a img {
 }
 a:focus, a:hover {
   border: 2px solid skyblue;
-  transition: border 0.2s ease-in;
   outline: 0;
 }
 
+/* ============================================= */
+/*              Search                           */
+/* ============================================= */
 input {
   grid-column: span 3;
   width: 100%;
@@ -648,9 +650,5 @@ input {
   transition: border 0.4s ease-in-out;
   outline: 0;
 }
-
-/* ============================================= */
-/*              Search                           */
-/* ============================================= */
 
 /*# sourceMappingURL=style.css.map */
