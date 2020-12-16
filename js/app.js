@@ -1,30 +1,30 @@
 // Lightbox plugin
-
 window.addEventListener('load', function() {
     baguetteBox.run('.gallery');
 });
 
 // Search function
 function handleInput(e) {
-    console.log(e.currentTarget.value);
-    // let filter = e.currentTarget.value.toLowerCase();
-    // console.log(`this is filtered: ${filter}`);
+    // console.log('input ' + e.currentTarget.value);
+    searchByChar(captions);
+}
+
+function searchByChar(array) {
+    for (let i = 0; i < array.length; i++) {
+        let caption = array[i].getAttribute('data-caption').toLowerCase();
+        let filter = input.value.toLowerCase();
+        // console.log("filter " + filter);
+
+        if (caption.includes(filter)) {
+            array[i].style.display = 'block';
+        } else {
+            array[i].style.display = 'none';
+        }
+    }
 }
 
 const input = document.querySelector('#searchfield');
-const caption = document.querySelectorAll('a');
+const captions = document.querySelectorAll('a');
 const img = document.querySelector('img');
 
 input.addEventListener('keyup', handleInput);
-
-// const searchHandler = caption.forEach(element => {
-//     const value = element.getAttribute('data-caption');
-//     // console.log(value.toLowerCase());
-//     console.log(element);
-
-//     if (!value.toLowerCase().includes(filter) && filter !== '') {
-//         element.style.display = 'none';
-//     } else {
-//         console.log(element.getAttribute('href'));
-//     }
-// });
