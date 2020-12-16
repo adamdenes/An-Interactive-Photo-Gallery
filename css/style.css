@@ -605,14 +605,14 @@ main {
 /*              Grid System                      */
 /* ============================================= */
 .gallery {
-  max-width: 75%;
+  max-width: 85%;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 228px));
   justify-content: center;
 }
 
