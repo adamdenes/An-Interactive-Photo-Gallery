@@ -5,7 +5,6 @@ window.addEventListener('load', function() {
 
 // Search function
 function handleInput(e) {
-    // console.log('input ' + e.currentTarget.value);
     searchByChar(captions);
 }
 
@@ -13,13 +12,8 @@ function searchByChar(array) {
     for (let i = 0; i < array.length; i++) {
         let caption = array[i].getAttribute('data-caption').toLowerCase();
         let filter = input.value.toLowerCase();
-        // console.log("filter " + filter);
 
-        if (caption.includes(filter)) {
-            array[i].style.display = 'block';
-        } else {
-            array[i].style.display = 'none';
-        }
+        caption.includes(filter) ? array[i].style.display = 'block' : array[i].style.display = 'none';
     }
 }
 
